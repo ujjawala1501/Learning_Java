@@ -1,15 +1,19 @@
+https://www.youtube.com/watch?v=bQssdSrSGNE&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&index=9
+
 Time Complexity
 1)Relation between Input size and Running Time(Operations)
 
-This can be 1)Linear ,2)Quadratic ,3)Cubic 4)Logarithimic
+This can be 1)Linear 2)Quadratic 3)Cubic 4)Logarithimic
  Example:
  1)Below it will be 1
- Main(){
+ Main()
+ {
     Print("Hello")
  }
 
  2)Here it will be 2
- main(){
+ main() 
+ {
     print("Hello")
     print("Hello")
  }
@@ -21,12 +25,96 @@ This can be 1)Linear ,2)Quadratic ,3)Cubic 4)Logarithimic
  }
 
  Example
+
  public static void main(String args[])
  {
     Scanner sc=new Scanner(System.in);
     int n = sc.nextInt();
 
-    for(i=0;i<n;i++){
-        System.out.println("Hello");
+    for(i=0;i<n;i++){ //Here we have Linear complexity
+        System.out.println("Hello"); // this will run n times Or we can say the input is n then the operation number is n 
     }
  }
+
+#Time complexity is directly propotional to input n 
+
+#Time complexity can be found  3 ways
+    Best Case : Omega(1)
+    Average Case : Theta(n+1/2)
+    Worst Case : O(n)
+
+
+#Numbers given : 
+CASE 1#
+{1,2,3,4,5}
+ search 1
+    As its in 1st position the num of oprtn needed in 1 and so The Its the best case 
+
+CASE 2#
+    If the numbers are jumbeled we dont know where 1 is hence the scenrio is n and its Average Case (n+1/2)
+
+CASE 3#
+    If 1 is at last  it will be N times hence the worst case.
+
+
+
+Example
+
+For below code for each value of i starting from 0 ,
+the inner loop will run n times ,hnce the Hello will be prnted nXn times that is n^2. 
+
+public static void main(String args[]){
+    Scanner sc= new Scanner(System.in);
+    int n =sc.nextInt();
+
+    for(int i=0;i<n;i++){
+        for (int j=0;j<n;j++){   //This is Nested Loop
+            System.out.println("Hello");
+        }
+    }
+}
+
+Example
+
+For below Code for each value of i the inner loop will run m times hence making the complexity
+nxm
+
+public static void main(String args[]){
+    Scanner sc= new Scanner(System.in);
+    int n =sc.nextInt();
+    int m =sc.nextInt();
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            System.out.println("Hello");
+        }
+    }
+
+}
+
+Example
+For below the time complexity will be O(m+n)
+
+public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int m =  sc.nextInt();
+
+    for(int i=0;i<n;i++){
+        System.out.println("Hello"); // i=0 to n
+
+    }
+    for(int j=0;j<=m;j++){
+        System.out.println("Hello"); // j=0 to m
+    }
+
+}
+
+##Comparison
+value       O(n)   O(n^2)   O(n^3)
+n=1         1       1       1
+n=2         2      4       8
+n=3         3      9       27
+n=10^5      10^5   10^10    10^30
+
+#Space complexity :it depends on how much memory is the code taking which depends on the number of variable the code in using.
