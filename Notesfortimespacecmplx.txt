@@ -1,0 +1,32 @@
+Time Complexity
+1)Relation between Input size and Running Time(Operations)
+
+This can be 1)Linear ,2)Quadratic ,3)Cubic 4)Logarithimic
+ Example:
+ 1)Below it will be 1
+ Main(){
+    Print("Hello")
+ }
+
+ 2)Here it will be 2
+ main(){
+    print("Hello")
+    print("Hello")
+ }
+
+ 3)Suppose we are taking input as "n" the loop will run n times
+ for (int i=0 to n)
+ {
+    print("Hello") //here the same operation will be repeated n times hence the number of operations increase with input size.
+ }
+
+ Example
+ public static void main(String args[])
+ {
+    Scanner sc=new Scanner(System.in);
+    int n = sc.nextInt();
+
+    for(i=0;i<n;i++){
+        System.out.println("Hello");
+    }
+ }
