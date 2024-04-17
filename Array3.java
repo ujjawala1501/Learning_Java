@@ -1,4 +1,5 @@
 //Q.Take an array as input from the user.search for a given number x and print the index at which it occurs
+//Linear Search Algorithm
 import java.util.*;
 public class Array3 {
     public static void main(String[] args) {
