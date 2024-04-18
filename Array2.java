@@ -15,4 +15,5 @@ public class Array2 {
     }
     
 }
-//Java by default assigns values for data types: int->0 ,float->0.0 ,boolean->false ,string ->" "
+//Java by default assigns values for data types: int->0 ,float->0.0 ,boolean->false ,string ->" ".
+//Updated
