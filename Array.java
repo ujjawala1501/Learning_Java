@@ -22,3 +22,4 @@ public class Array {
 //Other way to define an array if we already know the number of integers we need and the values as well
 //type[] arrayName ={n1,n2,n3}
 //int marks[] ={91,92,93};
+

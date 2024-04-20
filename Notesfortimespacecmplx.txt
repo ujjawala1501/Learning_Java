@@ -118,3 +118,4 @@ n=3         3      9       27
 n=10^5      10^5   10^10    10^30
 
 #Space complexity :it depends on how much memory is the code taking which depends on the number of variable the code in using.
+
