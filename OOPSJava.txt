@@ -100,10 +100,20 @@ class Pen{
     }
 }
 
+class Student{
+    String name;
+    int age;
+
+    public void printInfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+
+}
 public class OOPS {
     //object of the class pen
     public statis void main(String args[]){
-    // name of class 
+    // name of class   is "Pen" so object name should be "pen1"
         Pen pen1 = new Pen();
         //to access the quality from class
         pen1.colour="blue";
@@ -115,8 +125,15 @@ public class OOPS {
         pen2.color = "black";
         pen2.type = "ballpoint";
 
-        pen1.printColor();
+    //this keyword helps function undertstand which object has called it
+        pen1.printColor(); 
         pen2.printColor();
         
+    //THIS IS FOR STUDENT CLASS
+        Student std1=new Student();
+        std1.name="aman";
+        std1.age=24;
+
+        std1.printInfo();
     }
 }
