@@ -1,0 +1,7 @@
+Refer this:
+https://www.youtube.com/watch?v=ARvQcqJ_-NY
+
+
+Greedy method is used for optemization problems:optemization probs are the ones who require max or min result.
+
+p:A->B (there will be multiple solutions to reach from A to B like taking train or bus or walk...)
