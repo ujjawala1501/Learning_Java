@@ -2,6 +2,34 @@ Refer this:
 https://www.youtube.com/watch?v=ARvQcqJ_-NY
 
 
-Greedy method is used for optemization problems:optemization probs are the ones who require max or min result.
-
+Greedy method is used for optimization problems:optemization probs are the ones who require max or min result.
 p:A->B (there will be multiple solutions to reach from A to B like taking train or bus or walk...)
+Feasible Solution : The solution which satisfies the requirement given to us like we need to reach in 2 hrs so well take a flight .
+Minimization problem : the problem demans minimum solution.
+Optimal problem : The  solution both feasible and minimal.
+satisfying the objective of the problem.
+
+#To solve optimizatio problem:
+1.Greedy Method
+2. Dynamic Programming
+3. Branch and Bound
+
+A problem should be solved in stages ,each time we pick a solution
+
+Algorithm Greedy (a,n){
+    for i=1 to n development
+    {
+        x=select(a);
+        if feasible(x) then
+        solution=solution+x;
+    }
+}
+
+
+
+EXPLANATION:
+Suppose if you want to buy best car(optimal car) .
+you will figure YOUR best approach so that you doont have to look each car in the whole city .
+and according to your selection process youll find the best car this is greedy method.
+
+EXAMPLE:
