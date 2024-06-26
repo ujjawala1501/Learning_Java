@@ -6,7 +6,7 @@ public class Array3 {
         Scanner sc =new Scanner(System.in);
         int arraySize = sc.nextInt();
         int array[] = new int[arraySize];
-        int x = 99;
+        int x = 99; //we are searching for this value in the array
         //for loop for taking input of values
         for(int i=0;i<arraySize;i++){
             array[i] = sc.nextInt();
