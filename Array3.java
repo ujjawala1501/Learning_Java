@@ -15,7 +15,7 @@ public class Array3 {
         for(int i=0; i< array.length ;i++){
             if (array[i] == x){
                 System.out.println("found at index" +i);
-
+ //---useless comment---Need to see if getting updated to the git repo
             }
         }
 
