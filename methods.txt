@@ -1,0 +1,48 @@
+#When creating two class 1)Consists of main() 2)Class which has other functional method ,
+you need to compile both and run the class which has main() method in it .
+Example: Refer to Method.java for code
+"javac Calculator.java Method.java "
+Run the Correct Class: Instead of running the Calculator class, run the Method class:
+bash
+"java Method"
+
+# Method Overloading
+is a feature in object-oriented programming that allows a class to
+ have more than one method with the same name, provided that the methods have different
+ parameter lists (different types, number of parameters, or both).
+ This enables methods to perform similar functions but with different inputs,
+ enhancing code readability and usability.
+
+ EXAMPLE:
+
+ public class MathOperations {
+
+     // Method to add two integers
+     public int add(int a, int b) {
+         return a + b;
+     }
+
+     // Overloaded method to add three integers
+     public int add(int a, int b, int c) {
+         return a + b + c;
+     }
+
+     // Overloaded method to add two double values
+     public double add(double a, double b) {
+         return a + b;
+     }
+
+     public static void main(String[] args) {
+         MathOperations math = new MathOperations();
+
+         // Calling the different overloaded methods
+         System.out.println("Sum of two integers: " + math.add(5, 10)); // Calls the first method
+         System.out.println("Sum of three integers: " + math.add(5, 10, 15)); // Calls the second method
+         System.out.println("Sum of two doubles: " + math.add(5.5, 10.5)); // Calls the third method
+     }
+ }
+
+ # Every method has its own stack in jvm to give variables
+   their spaces and values that have been assigned to them.
+
+
