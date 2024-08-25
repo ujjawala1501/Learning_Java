@@ -17,7 +17,7 @@ public class Array2D {
 
         int[][] numbers = new int[rows][columns];
         //We use nested loop where outer loop controls Number of rows whereas  inner loop will control number of columns in each row
-        //i=0 >1st row ->0,1,2,3 (columns) similarly fro other rows
+        //i=0 >1st row ->0,1,2,3 (columns) similarly for other rows
         
         //Loop for Input in 2D Array
         for(int i=0 ;i<rows;i++){
