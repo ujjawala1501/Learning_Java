@@ -23,16 +23,26 @@ public class Array2D {
         for(int i=0 ;i<rows;i++){
             for(int j=0;j<columns;j++){
                 numbers[i][j] =sc.nextInt();
+         //       numbers[i][j] = (int)(Math.random() *100) ; This line is how we can assign random number to array ,100 is being multiplied because the random function always give output in double ,we need that in int form.
             }
         }
 
         //Loop for output in 2D Array
         for(int i=0;i<rows;i++){
             for(int j=0 ;j<columns;j++){
-                System.out.println(numbers[i][j] + " ");
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.println();
+        }
+        //Another kind  for loop to print output
+        System.out.println("Below output is to test Another kind of 'For' Loop");
+        for(int n[] : numbers){  //Here n is not a single number it is an array which is reading from numbers array
+            for(int m : n){  // m is reading from n array
+                System.out.print(m + " ");
             }
             System.out.println();
         }
     }
     
 }
+
