@@ -24,11 +24,17 @@ public class Array_example{
         s3.marks = 75;
 
       //Creating "students" array to store the above students information
-        Student student[] = new Student[3]; //3 is the size of the array as we have 3 objects above so we took 3 as its size
-        student[0]=s1;
-        student[1]=s2;
-        student[2]=s3;
-        //
+        Student students[] = new Student[3]; //3 is the size of the array as we have 3 objects above so we took 3 as its size , this can only hold objects of Student class 
+        students[0]=s1;
+        students[1]=s2;
+        students[2]=s3;
+        //printing array
+        //below loop is new kind it means "int n" gets the variable from "students" array.
+
+        for(Student n : students){
+
+          System.out.println("Name :"+ n.Name + "rollno :"+n.rollno);
+        }
     }
 
 }
