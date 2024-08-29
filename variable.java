@@ -1,4 +1,5 @@
-class firstProg {
+//This is just a test if jdk is installed 
+/* class firstProg {
     public static void main(String[] args){
         System.out.print("Hello World");
         int a = 2;
@@ -7,3 +8,4 @@ class firstProg {
         System.out.println("result of a + b = " + c );
     }
 }
+*/

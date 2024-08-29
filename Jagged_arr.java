@@ -20,7 +20,7 @@ class Jagged_arr{
 
         for(int i=0;i<arr.length;i++){
             for(int j =0;j<arr[i].length;j++){
-      //https://www.w3schools.com/java/java_ref_math.asp  // This is for Math function.
+      //https://www.w3schools.com/java/java_ref_math.asp  // This is for Math function
                 arr[i][j] = (int)(Math.random() *100);
             }
         }

@@ -1,4 +1,3 @@
-import java.net.SocketPermission; //This was not needed
 import java.util.*;
 public class Hashmap {
 
