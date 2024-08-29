@@ -4,7 +4,7 @@ class Jagged_arr{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        int arr[][] = new int[3][]; //jagged array (different number of columns for each row
+        int arr[][] = new int[3][]; //jagged array (different number of columns for each row)
         System.out.println("Enter no. of columns for 1st row :");
       //  arr[0] = new int[3];      This is constant
           int r1 = sc.nextInt(); //This will take user input for number of columns
