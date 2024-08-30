@@ -32,7 +32,7 @@ public class String_var{
 
         String xA = "10";
         String yA = "20";
-        String zA = x + y;  // z will be 1020 (a String)
+        String zA = xA + yA;  // z will be 1020 (a String)
     }
 
 }
