@@ -3,7 +3,7 @@ class Student{
     int rollno;
     int marks;
 }
-public class Array_example{
+public class Enhanced_for_Loop{
     public static void main(String[] args){
        //Creating Object for student class
         Student s1 = new Student();

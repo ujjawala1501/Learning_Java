@@ -1,0 +1,36 @@
+1. Java Lang Package (java.lang)
+Contains fundamental classes essential to the Java programming language, such as String, Math, Integer, and System.
+Automatically imported into every Java program.
+
+2. Java Util Package (java.util)
+Provides the collections framework, legacy collection classes, date and time facilities, and various utility classes (e.g., ArrayList, HashMap, Date, Random).
+
+3. Java IO Package (java.io)
+Contains classes for input and output through data streams, serialization, and file handling (e.g., File, InputStream, OutputStream, Reader, Writer).
+
+4. Java Net Package (java.net)
+Provides classes for networking applications, including support for URLs, sockets, and IP addresses (e.g., Socket, ServerSocket, URL).
+
+5. Java AWT Package (java.awt)
+Contains classes for building graphical user interfaces (GUIs) and provides components for creating windows, buttons, and other GUI elements.
+
+6. Java Swing Package (javax.swing)
+A part of the Java Foundation Classes (JFC), it provides a set of GUI components that are lightweight and platform-independent (e.g., JButton, JFrame, JPanel).
+
+7. Java SQL Package (java.sql)
+Contains classes and interfaces for accessing and processing data stored in a database (e.g., Connection, Statement, ResultSet).
+
+8. Java Math Package (java.math)
+Provides classes for performing arbitrary-precision integer arithmetic (BigInteger) and arbitrary-precision decimal arithmetic (BigDecimal).
+
+9. Java Security Package (java.security)
+Contains classes and interfaces for implementing security features, such as authentication, access control, and cryptography.
+
+10. Java Time Package (java.time)
+Introduced in Java 8, it provides a comprehensive date and time API (e.g., LocalDate, LocalTime, ZonedDateTime).
+
+11. Java Text Package (java.text)
+Provides classes and interfaces for formatting and parsing text, dates, numbers, and messages in a locale-sensitive manner.
+
+12. Java Util Logging Package (java.util.logging)
+Contains classes and interfaces for the Java platform's core logging facilities, allowing developers to log application events.
