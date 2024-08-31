@@ -1,10 +1,10 @@
 //String is not primitive type like other data types they start
 // with small letter but while describing "String" it starts with capital "S"its a class .
-
+//String constant pool is used to save memory (if one value is been assigned to a variable the next if the same value gets assigned to new variable it will be pointing to the previous values address)
 import java.lang.String;
 public class String_var{
     public static void main(String[] args){
-        String Name = new String("Neer");   //We can assign a value like this.
+        String Name = new String("Neer");   //We can assign a value like this. "original" is given by IDE you can remove that.
         String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";  //We can assign a value like this as well.
         System.out.println("The length of the txt string is: " + txt.length());
 
@@ -36,3 +36,6 @@ public class String_var{
     }
 
 }
+//Mutable strings (String Buffer or String Builder)
+// immutable Strings normal String
+//String Buffer 
