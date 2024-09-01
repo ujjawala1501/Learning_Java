@@ -1,7 +1,6 @@
 //Mutable strings (String Buffer or String Builder)
 // immutable Strings normal String
 //In String Buffer capacity is allocated for the value so length and capacity are two diff. things in String buffer.
-//A static variable is common for all the objects 
 //Example
 
 public class String_Buffer {

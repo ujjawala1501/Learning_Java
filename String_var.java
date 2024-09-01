@@ -36,6 +36,3 @@ public class String_var{
     }
 
 }
-//Mutable strings (String Buffer or String Builder)
-// immutable Strings normal String
-//String Buffer 
