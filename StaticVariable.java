@@ -20,11 +20,13 @@ class StaticVariable{
         m1.brand = "apple";
         m1.price = 15000;
         Mobile.name="Iphone"; //assigning using class name and not object because its static variable.
+        m1.show();
    
         Mobile m2 =new Mobile();
         m2.brand = "Samsung";
         m2.price = 30000;
         m2.name = "Android";
+        m2.show();
     }
 
 }
