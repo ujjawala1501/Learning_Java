@@ -35,3 +35,6 @@ public class Main {
   } 
 }
 
+# In JVM there is a class loader ,every time we load a class static gets loaded and after that the object gets loaded.
+#but if you do not create an object static will also not get called if we want to call class without object we need to use "Class" class 
+#There are three static things ->Variable,method,block
