@@ -3,11 +3,13 @@
 //there is different area in jvm for static variable
 //Static keyword mean we are making something as a class member not an object member
 //static variable saves memory as every object doesnt consumes memory and only class can be used.
-//if we change the static variable u
+//static variable ,static block is in class_loader , static method is in this notes.
 class Mobile {
     String brand ;
     int price;    
     static String name;
+
+    //creating Constructor for static block explanation 
 
     public void show(){
         System.out.println(brand + price + name);
