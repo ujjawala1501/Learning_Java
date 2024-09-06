@@ -51,3 +51,25 @@ public class EncapsulationbyAi {
         System.out.println(obj.getHeight() + " : " + obj.getAddress()); // Accessing height and address
     }
 }
+
+/*
+Hiding the secret:
+Encapsulation allows you to hide the internal details of a class.
+By making the class members private, you can prevent direct access to the data.
+
+Flexibility and changes:
+Encapsulated code is more flexible and easier to change with new requirements.
+You can change the internal implementation of a class without affecting the code that uses the class.
+
+Easier testing and debugging:
+Encapsulation makes unit testing easier because each class can be tested independently.
+It helps in debugging because you can easily identify the source of an error within the class.
+
+Reducing dependencies:
+Encapsulation reduces dependencies between classes by hiding the internal implementation details.
+It groups related data and methods together within a class.
+
+Abstraction and encapsulation:
+Abstraction focuses on the external behavior of an object, while encapsulation focuses on the internal implementation details.
+Abstraction is achieved through interfaces and abstract classes, while encapsulation is achieved through access modifiers and getter/setter methods.
+*/
