@@ -1,3 +1,4 @@
+//we can name get and set any thing we want like "xyz" or"ffgh" but that will create confusion while reading so use get while getting the value and set while setting the value
 class Human {
     // Private variables
     private int age = 11; // accessible only in the same class
@@ -8,7 +9,7 @@ class Human {
     private String address; 
 
     // Getter for age
-    public int getAge() {
+    public int getAge() { 
         return age; // this will fetch the value as it's in the same class
     }
 

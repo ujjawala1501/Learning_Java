@@ -18,6 +18,6 @@ public class class_loader{
 
         //this is how we can load class without creating object
         //everytime we will create object static will load first and then other meth
-        Class.forName("Mobile");// instantiate class and dont creates object
+        Class.forName("Mobile");// instantiate class and dont creates object 
     }
 }
