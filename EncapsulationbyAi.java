@@ -1,5 +1,6 @@
 //we can name get and set any thing we want like "xyz" or"ffgh" but that will create confusion while reading so use get while getting the value and set while setting the value
-class Human {
+package Learning_Java;
+class Human2 {
     // Private variables
     private int age = 11; // accessible only in the same class
     private String name = "Laxmi";
@@ -41,7 +42,7 @@ class Human {
 
 public class EncapsulationbyAi {
     public static void main(String[] args) {
-        Human obj = new Human();
+        Human2 obj = new Human2();
         
         // Below is how we are indirectly assigning values to private variables (through object)
         obj.setHeight(6);
