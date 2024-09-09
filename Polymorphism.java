@@ -5,6 +5,14 @@ package Learning_Java;
 //By changing number of arguments
 //By changing the data type
 // Base class
+
+/*Explanation
+Polymorphism is a fancy word that means "many shapes." In programming, it allows us to use a single interface or method to represent different types of objects. This means you can call the same method on different objects, and each object can respond in its own way.
+Simple Example: Animals
+Imagine you have different types of animals: a Dog and a Cat. Both animals can make a sound, but they make different sounds.
+Dog says "Bark"
+Cat says "Meow"
+ */
 class Animal {
     void makeSound() {
         // Default sound
