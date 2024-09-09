@@ -47,3 +47,21 @@ public class Polymorphism {
         myCat.makeSound(); // Output: Meow
     }
 }
+
+/*
+Explanation of the Code
+Animal Class: This is the base class with a method called makeSound(). It provides a default sound.
+Dog Class: This class extends the Animal class and overrides the makeSound() method to say "Bark".
+Cat Class: This class also extends the Animal class and overrides the makeSound() method to say "Meow".
+Main Class: In the main method, we create a Dog object and a Cat object but refer to them as Animal. When we call makeSound(), each object responds with its own sound.
+
+Why is This Useful?
+Polymorphism allows you to write more flexible and reusable code. You can create a method that works
+with the Animal type, and it will work with any subclass (like Dog or Cat) without needing to know the
+specific type of animal.
+
+Summary
+In simple terms, polymorphism lets us use the same method name for different types of objects,
+ and each object can behave differently. Just like how both a dog and a cat can "make a sound,"
+ but they make different sounds!
+ */
