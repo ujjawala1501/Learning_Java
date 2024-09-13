@@ -25,9 +25,9 @@ class Main {
     }
   }
   
-<<<<<<< HEAD
+
   // Outputs 5
-=======
+
   // Outputs 5
   /*the constructor name must match the class name, and it cannot have a return type (like void).
 
@@ -68,4 +68,4 @@ class ToyCar {
 }
 
 */
->>>>>>> 4fa3f62cb866cd86e89fce79f2e71f8951a26ca2
+

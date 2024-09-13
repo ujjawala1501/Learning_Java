@@ -1,0 +1,22 @@
+Super Keyword
+Imagine you have a family, and you are the child. Your parents are the parent class, and you are the child class. The super keyword is like you referring to your parents when you need something from them, like their age or their methods.
+For example:
+You can use super to refer to your parents' age when there is a conflict with your own age.
+You can use super to call your parents' methods, especially if you have overridden them in your own class.
+You can use super() to call your parents' constructor from your own constructor. This must be the first thing you do in your constructor.
+However, there are some restrictions:
+You cannot use super in static contexts (like static methods) because it refers to instance members of your parents' class.
+You cannot use both this and super in the same constructor, as both should be the first statement.
+This Keyword
+The this keyword is like you referring to yourself. It is a reference variable that refers to the current object (you).
+For example:
+You can use this to access your own variables, especially when they have the same name as your parameters.
+You can use this() to call another constructor in your own class.
+You can pass this as an argument to methods or constructors.
+However, there are some restrictions:
+Similar to super, this cannot be used in static contexts.
+this cannot be used to refer to your parents' class members.
+Key Differences
+this refers to you (the current class instance), while super refers to your parents (the parent class instance).
+this is used for accessing your own class members, whereas super is used for accessing your parents' class members.
+You can use this to call your own class constructors, but super is used to call your parents' class constructors.
