@@ -1,7 +1,7 @@
 //When there is inheritance each class if in different file must be compiled and better if compiled together like below
 // "Javac Inheritance/calc1.java Inheritance/calc2.java Inheritance/maincalc.java "
 //Single level inheritance is when one class extends one class,multi level is when 1<2<3 .like below example.
-//A child cannot extend two parent at a time.
+//A child cannot extend two parent at a time , because why if there are two  methods of same name in both parents which will child class choose?,this is called ambiguity problem.
 package Inheritance;
 
 public class maincalc {
