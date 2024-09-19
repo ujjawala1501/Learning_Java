@@ -6,6 +6,7 @@ import Inheritance.calc1 ;
 //all inbuild are in a package
 //System is a class 
 //Java.lang.System is by default imported hence System is not required to be imported.
+// when big project is created or libraries are created the name of package which will be share with the world needs to have a unique name.
 public class file1 {
     
 }
