@@ -49,3 +49,9 @@ void displayDefault() {
 }
 }
 
+/*Summary of Differences
+Modifier	Class Level	Package Level	Subclass Level	Global Level
+public	    Yes	        Yes	            Yes	            Yes
+protected	Yes	        Yes	            Yes	            No
+private	    Yes	        No	            No	            No
+Default	    Yes	        Yes	            No	            No */
