@@ -4,7 +4,7 @@ public class AccessModifiers {
 //Public
 //Description: Members declared as public are accessible from any other class in any package.
 //java
-public class PublicExample {
+/*public class PublicExample {
     public int publicVar = 10;
 
     public void display() {
