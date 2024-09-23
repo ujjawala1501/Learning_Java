@@ -34,7 +34,7 @@ class main{
 
         obj = new C(); //reassigning a new object to the same variable 
         obj.show(); // this time obj is pointing to C objects address
-//Each time obj is calling show but it is being decided at runtime that which show will be called in every step hence its dynamic method dispatch.
+//Each time obj is calling show but it is being decided at runtime that which show will be called in every step hence its dynamic method dispatch. This works only with Inheritance
         }
 }
 */
