@@ -1,7 +1,7 @@
 //Every time we create a instance variable we need to keep it private so that no one can access it directly we can access it indirectly though using methods
 //we can name get and set any thing we want like "xyz" or"ffgh" but that will create confusion while reading so use get while getting the value and set while setting the value
 //Getters and setters can be created using IDE.
-package Learning_Java;
+//package Learning_Java;
 class Human{
 //Below variables are examples of getting the values
 private int age = 11; //accessible only in the same class

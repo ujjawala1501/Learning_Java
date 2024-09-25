@@ -1,5 +1,5 @@
 //we can name get and set any thing we want like "xyz" or"ffgh" but that will create confusion while reading so use get while getting the value and set while setting the value
-package Learning_Java;
+//package Learning_Java;
 class Human2 {
     // Private variables
     private int age = 11; // accessible only in the same class

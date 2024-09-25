@@ -137,3 +137,45 @@ public class OOPS {
         std1.printInfo();
     }
 }
+
+#Abstraction 
+n Java (and programming in general), abstraction is like that toy car. It means we hide all the complicated stuff (like how the car works) and only show the important parts that you need to use (like pushing it to make it go).
+How Does This Work in Java?
+Classes and Objects:
+Think of a class as a blueprint for a toy. It tells us what the toy should look like and what it can do.
+An object is like the actual toy made from that blueprint.
+Abstract Classes:
+An abstract class is like a special kind of blueprint that can't be used to make a toy directly. Instead, it's meant to be used by other blueprints (called subclasses) that will create specific toys.
+For example, if we have an abstract class called Animal, we can’t create an animal directly. Instead, we can create specific animals like Dog or Cat that use the Animal blueprint.
+Abstract Methods:
+An abstract method is like saying, "I want my toy to make a sound, but I won’t say what sound it makes here." The specific toys (like Dog or Cat) will decide what sound they make.
+So, in our Animal class, we might say there’s an abstract method called makeSound(), but we don’t define what sound it makes until we create a specific animal.
+Example
+Here’s a simple way to think about it:
+java
+// This is an abstract class
+abstract class Animal {
+    // This is an abstract method
+    public abstract void makeSound();
+}
+
+// This is a specific animal
+class Dog extends Animal {
+    // Now we say what sound the dog makes
+    public void makeSound() {
+        System.out.println("Woof!");
+    }
+}
+
+// This is another specific animal
+class Cat extends Animal {
+    // Now we say what sound the cat makes
+    public void makeSound() {
+        System.out.println("Meow!");
+    }
+}
+
+Summary
+Abstraction helps us focus on what things do instead of how they do it.
+We use abstract classes as blueprints that can't be used directly, and abstract methods let us decide later what specific things will do.
+Just like with your toy car, you can play without knowing all the details about how it works!
