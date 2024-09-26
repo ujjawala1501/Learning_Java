@@ -13,15 +13,15 @@ public class quicksort {
 
     public static void quicksortm(int arr[] , int low , int high){
         if (low < high){
-        int pi = partition(arr,low,high);
-        quicksortm(arr,low,pi-1);
-        quicksortm(arr,pi+1,high);
+            int pi = partition(arr,low,high); //this func return address of pivot (pi) ,this is the main character here i have give this one its place through sorting
+            quicksortm(arr,low,pi-1);
+            quicksortm(arr,pi+1,high);
         }
     }
 
     
     public static int partition(int arr[],int low ,int high){
-        int pivot = high;
+        int pivot = arr[high];
         int i = low-1;
 
         for(int j = low;j<high;j++){
@@ -38,7 +38,7 @@ public class quicksort {
         arr[i+1] = temp;
         return i+1;
     }
-    //Main Method which calls quicksort only once 
+    //Main Method which calls quicksort only once and prints output
     public static void main(String[] args){
         int arr[] = {6,3,9,5,2,8};
         int n = arr.length;
