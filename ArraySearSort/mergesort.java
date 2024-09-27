@@ -62,4 +62,20 @@ Divide each half again:
 Left half: [, , , ]
 Right half: [1
 , , , ]
+Conquer: Recursively sort each sublist. Since each sublist has only one element, they are already sorted.
+Combine: Merge the sorted sublists back together:
+Left half: [2, 4, 5, 6]
+Right half: [1, 2, 3, 5]
+Combine the two sorted halves:
+Final sorted list: [1, 2, 2, 3, 4, 5, 5, 6]
+How Merging Works
+The merge step is where the actual sorting happens. Here's how it works:
+Create an empty list to store the merged result.
+Compare the first elements of the two sublists.
+Add the smaller element to the merged list and remove it from its sublist.
+Repeat step 3 until one of the sublists is empty.
+Add any remaining elements from the non-empty sublist to the merged list.
+By repeatedly dividing the list into smaller parts, sorting each part, and merging them back together, Merge Sort is able to efficiently sort the entire list.
+The time complexity of Merge Sort is O(n log n), which makes it efficient for sorting large lists. It also has the advantage of being a stable sort, meaning it preserves the relative order of equal elements.
+
  */
