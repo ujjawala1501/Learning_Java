@@ -32,10 +32,11 @@ class A{
 }
 public class Innerclass{
     public static void main(String[] args){
-        A obj = new A()
-        {
-            public void show(){
-                System.out.println("in main method class Innerclass"); //we are changing the value for show method in A class,this is overriding of the method aaand this is INNERCLASS as class is not defined but we are changing the value inside class Innerclass.
+        A obj = new A() 
+        //this can be used to make changes in abstract method of abstract class as well ,remember that abstract class can contain normal methods as well as abstract methods.
+        { //class starts from here and note that the semicolon which was supposed to be at the end of above equation is not there and its at the end of curly braces.
+            public void show(){ //this is under anonymous class and this can be done for multiple methods if we want to override operations
+                System.out.println("in main method class Innerclass"); //we are changing the value for show method in A class,this is overriding of the method aaand this is INNERCLASS as class is not defined but we are changing the value inside class Innerclass. 
             } 
         };
         obj.show();
