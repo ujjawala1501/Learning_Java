@@ -1,5 +1,6 @@
 
-class A{
+//EXAMPLE 1
+/*class A{
     int age;
     public void show(){
         System.out.println("in class A show method");
@@ -21,4 +22,23 @@ public class Innerclass {
             obj1.config(); 
     }
 
+} */
+
+//EXAMPLE 2
+class A{
+    public void show(){
+        System.out.println("In a show");
+    }
 }
+public class Innerclass{
+    public static void main(String[] args){
+        A obj = new A()
+        {
+            public void show(){
+                System.out.println("in main method class Innerclass"); //we are changing the value for show method in A class,this is overriding of the method aaand this is INNERCLASS as class is not defined but we are changing the value inside class Innerclass.
+            } 
+        };
+        obj.show();
+    }
+}
+
