@@ -44,6 +44,9 @@ public class Interfaces {
         obj.config();
         System.out.println(A.area);
         //A.area = "Hyderabad" //cannot change the value because its final by default
+        
+        C obj1 = new B();
+        obj1.run();    
     }
     
 }
