@@ -2,6 +2,10 @@
     public abstract void show();
     public abstract
 }*/
+//Inheritance keywords
+//CLASS - Class -> extends
+//CLASS - interfaces -> implements
+//interface - interface -> extends 
 //Instead of above we can use Interface
 //interface is not a class and by default the methods in interface are public abstract
 interface A{    //variables can also be declared in interfaces but every variable are by default final and static
@@ -10,13 +14,24 @@ interface A{    //variables can also be declared in interfaces but every variabl
     void show();
     void config();
 }
+interface C {
+    void run();
 
-class B implements A{ // when using implements you must define ALL the methods in parent interface
+}
+interface D extends C{ //inheritance is valid in interfaces.
+
+}
+
+class B implements A,C{ // when using implements you must define ALL the methods in parent interface
+   //One class can implement multiple Interfaces we just need to define every method in every interface in the class thats implementing  
     public void show(){
         System.out.println("in show");
     }
     public void config(){
         System.out.println("in config");
+    }
+    public void run(){
+        System.out.println("in run");
     }
 
 }
