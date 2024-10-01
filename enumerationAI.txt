@@ -1,0 +1,61 @@
+Enumeration, commonly referred to as enum, is a special data type in Java that allows you to define a set of named constants. Enums are particularly useful when you have a fixed set of related values that do not change, such as days of the week, colors, or directions.
+Key Features of Enums
+Defined Constants:
+Enums provide a way to define a list of constants that belong to a specific type. For example, you can create an enum for the days of the week:
+java
+public enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+Type Safety:
+Enums are type-safe, meaning you cannot assign any value other than the predefined constants. This helps prevent errors in your code.
+Usage in Switch Statements:
+Enums can be used in switch statements, which allows for cleaner and more readable code when making decisions based on the enum values:
+java
+Day today = Day.MONDAY;
+
+switch (today) {
+    case MONDAY:
+        System.out.println("Start of the week!");
+        break;
+    case FRIDAY:
+        System.out.println("Almost weekend!");
+        break;
+    case SATURDAY:
+    case SUNDAY:
+        System.out.println("It's the weekend!");
+        break;
+    default:
+        System.out.println("Midweek day.");
+        break;
+}
+
+Built-in Methods:
+Enums come with built-in methods like values(), which returns an array of all enum constants, and ordinal(), which gives the position of the constant in the enum declaration:
+java
+for (Day day : Day.values()) {
+    System.out.println(day + " is at position " + day.ordinal());
+}
+
+Constructors and Methods:
+Enums can have constructors and methods just like regular classes. This allows you to associate additional data with each constant or define behavior:
+java
+public enum Color {
+    RED("#FF0000"),
+    GREEN("#00FF00"),
+    BLUE("#0000FF");
+
+    private String hexCode;
+
+    Color(String hexCode) {
+        this.hexCode = hexCode;
+    }
+
+    public String getHexCode() {
+        return hexCode;
+    }
+}
+
+// Usage
+System.out.println(Color.RED.getHexCode()); // Outputs: #FF0000
+
