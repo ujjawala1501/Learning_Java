@@ -1,5 +1,6 @@
 // Every constructor in java has a method even if you cant see it or mention it (super ) like john cena
 //super = call the constructor of a super class
+//this() in java is used to invoke the same class constructor and super() is used to to invoke superclass constructor.
 class A{ //Suber class
     public A(){
         System.out.println("In A");

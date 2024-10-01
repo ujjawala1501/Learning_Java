@@ -18,6 +18,7 @@ public class enumeration {
     
 }
 //enumeration with if.else and switch 
+//By default enum in java extends to enum class and there are several methods we get
 /* 
 enum Status1{
     Running, Failed, Pending, Success;
