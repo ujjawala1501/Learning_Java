@@ -1,4 +1,4 @@
-//
+//enumeration class was not very clear.
 //
 enum Status{ //here status is a class 
 Running, failed, pending, success; // all these are objects of status
