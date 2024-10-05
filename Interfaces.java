@@ -54,5 +54,5 @@ public class Interfaces {
  Types of Interfaces :
     1)Normal interface >interface have two or more methods
     2)Functional interface/SAM >(Single Abstract Method) it has only one method in it 
-    3)Marker interface > interface which has no methods (just to update the compiler )
+    3)Marker interface > interface which has no methods ,its just a blank interface. (just to update the compiler (maybe google this chhoti))
  */
