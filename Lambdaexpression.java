@@ -1,3 +1,4 @@
+//lambda works only with functional interface      
 @FunctionalInterface
 interface A 
 {
