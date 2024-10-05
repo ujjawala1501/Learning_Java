@@ -25,3 +25,4 @@ public class functionalInterface {
     }
     
 }
+//in java 8 we have lambda expression
