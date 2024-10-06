@@ -40,3 +40,64 @@ public class Exceptions {
  Errors are something we cant handle.
  runtime Exceptions such as Arithmatic ,ArrayIndexOutOfBound,Null pointer ,for SQL exception IOException these we can handle whereas SQLException areChecked exceptions and Runtime exceptions are called Unchecked Exception
  */
+/*throw
+Purpose: Used to explicitly throw an exception from a method or a block of code.
+Usage: You can throw either a checked or unchecked exception.
+Example:
+java
+Copy code
+public class Example {
+    public static void checkAge(int age) {
+        if (age < 18) {
+            throw new IllegalArgumentException("Age must be 18 or older.");
+        }
+        System.out.println("Age is valid.");
+    }
+
+    public static void main(String[] args) {
+        try {
+            checkAge(15);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+throws
+Purpose: Used in a method signature to declare that a method may throw one or more exceptions.
+Usage: Typically used for checked exceptions, indicating that the caller of the method is responsible for handling the exception.
+Example:
+java
+Copy code
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Example {
+    public static void readFile(String fileName) throws FileNotFoundException {
+        File file = new File(fileName);
+        Scanner scanner = new Scanner(file);
+        // Read file content
+        scanner.close();
+    }
+
+    public static void main(String[] args) {
+        try {
+            readFile("nonexistentfile.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
+        }
+    }
+}
+Key Differences
+Context:
+
+throw: Used to actually throw an exception.
+throws: Declares that a method might throw an exception.
+Location:
+
+throw: Can be used anywhere in the code.
+throws: Must be used in the method signature.
+Exceptions:
+
+throw: Can throw both checked and unchecked exceptions.
+throws: Typically used for checked exceptions, but can also declare unchecked exceptions. */
