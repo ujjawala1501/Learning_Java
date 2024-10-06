@@ -36,3 +36,7 @@ public class Exceptions {
     }
     
 }
+/*which exceptions are important to handle 
+ Errors are something we cant handle.
+ runtime Exceptions such as Arithmatic ,ArrayIndexOutOfBound,Null pointer ,for SQL exception IOException these we can handle whereas SQLException areChecked exceptions and Runtime exceptions are called Unchecked Exception
+ */
