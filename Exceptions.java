@@ -100,4 +100,18 @@ throws: Must be used in the method signature.
 Exceptions:
 
 throw: Can throw both checked and unchecked exceptions.
-throws: Typically used for checked exceptions, but can also declare unchecked exceptions. */
+throws: Typically used for checked exceptions, but can also declare unchecked exceptions. 
+Types of Exceptions
+Checked Exceptions:
+Also known as compile-time exceptions.
+These must be either caught or declared in the method signature using the throws keyword.
+Examples include:
+SQLException
+ClassNotFoundException
+Unchecked Exceptions:
+Also known as runtime exceptions.
+These do not need to be explicitly handled or declared.
+Examples include:
+NullPointerException
+IllegalArgumentException
+ArithmeticException*/
