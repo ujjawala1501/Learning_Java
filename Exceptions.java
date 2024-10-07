@@ -135,4 +135,13 @@ finally {
 }
 
 Call Stack:
-When an exception is thrown, the runtime searches through the call stack (the list of method calls) to find an appropriate handler. This process is called "bubbling up" the stack.*/
+When an exception is thrown, the runtime searches through the call stack (the list of method calls) to find an appropriate handler. This process is called "bubbling up" the stack.
+Advantages of Exception Handling
+Separation of Error Handling Code: Allows you to separate normal code from error handling code, making it cleaner and easier to read.
+Propagation: Errors can propagate up the call stack until they are handled, allowing higher-level methods to manage errors they are more aware of.
+Resource Management: Helps manage resources effectively using constructs like finally, ensuring that resources are released properly.
+Best Practices
+Use Specific Exceptions: Catch specific exceptions rather than generic ones to handle errors more effectively.
+Avoid Swallowing Exceptions: Don’t catch exceptions without handling them; it can lead to silent failures.
+Document Exceptions: Use JavaDoc comments to document what exceptions a method can throw.
+*/
