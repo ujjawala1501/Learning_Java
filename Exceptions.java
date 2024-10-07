@@ -114,4 +114,25 @@ These do not need to be explicitly handled or declared.
 Examples include:
 NullPointerException
 IllegalArgumentException
-ArithmeticException*/
+ArithmeticException
+Exception Handling Mechanism
+Throwing Exceptions:
+When an error occurs, an exception object is created and thrown using the throw statement.
+Catching Exceptions:
+Use a try-catch block to handle exceptions:
+java
+try {
+    // Code that may throw an exception
+} catch (SpecificExceptionType e) {
+    // Handle the exception
+}
+
+Finally Block:
+An optional block that executes after the try-catch, regardless of whether an exception occurred. Useful for cleanup tasks.
+java
+finally {
+    // Cleanup code
+}
+
+Call Stack:
+When an exception is thrown, the runtime searches through the call stack (the list of method calls) to find an appropriate handler. This process is called "bubbling up" the stack.*/
