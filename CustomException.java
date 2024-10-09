@@ -1,5 +1,38 @@
+// Custom exception class
+class InsufficientFundsException extends Exception {
+    public InsufficientFundsException(String message) {
+        super(message);
+    }
+}
+
+// Bank Account class
+class BankAccount {
+    private double balance;
+
+    public BankAccount(double initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    public void withdraw(double amount) throws InsufficientFundsException {
+        if (amount > balance) {
+            throw new InsufficientFundsException("Insufficient funds: Available balance is " + balance);
+        }
+        balance -= amount;
+        System.out.println("Withdrawal successful. New balance: " + balance);
+    }
+}
+
+// Main class
 public class CustomException {
-    
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount(100.0);
+
+        try {
+            account.withdraw(150.0); // This will throw an exception
+        } catch (InsufficientFundsException e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
 }
 /*
  Custom Exceptions in Java
