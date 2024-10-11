@@ -33,4 +33,7 @@ Processing Method:
 The processInput method tries to cast the input object to a String. If it fails, it throws an exception, which we catch in the main method.
 Graceful Handling:
 Instead of checking the type before casting (which is more cumbersome), we handle the potential failure gracefully with an exception.
- */
+Benefits of This Approach
+Flexibility: You can pass different types of objects without worrying about their specific types until runtime.
+Simplicity: The code remains clean and straightforward without excessive type checking. 
+*/
