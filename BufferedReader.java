@@ -73,4 +73,5 @@ Input Types	Text only	Text, integers, doubles, etc.
 Line Reading	Uses readLine() method	Uses nextLine() method
 Conclusion
 Use BufferedReader when you need to read large amounts of text quickly.
+Use Scanner when you need to parse different data types or when working with formatted input.
  */
