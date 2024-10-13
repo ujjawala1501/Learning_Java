@@ -33,3 +33,8 @@ public class BufferedReader {
         }
     }
 }
+/*
+ Key Points
+Efficiency: BufferedReader is generally faster for reading large amounts of text.
+Methods: The readLine() method reads an entire line of text.
+ */
