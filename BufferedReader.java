@@ -38,3 +38,28 @@ public class BufferedReader {
 Efficiency: BufferedReader is generally faster for reading large amounts of text.
 Methods: The readLine() method reads an entire line of text.
  */
+/*
+
+ 2. Scanner
+Overview
+Scanner is a simple way to read input from various sources like keyboard input, files, etc. It can parse primitive types and strings using regular expressions.
+Example of Using Scanner
+java
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        // Create a Scanner object for reading input from System.in
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your age: ");
+        // Read an integer from user input
+        int age = scanner.nextInt();
+        
+        System.out.println("You are " + age + " years old.");
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
+ */
