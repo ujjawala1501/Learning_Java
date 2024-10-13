@@ -62,4 +62,15 @@ public class ScannerExample {
         scanner.close();
     }
 }
+Key Points
+Flexibility: Scanner can parse different types of inputs (e.g., integers, doubles).
+Methods: Common methods include nextInt(), nextLine(), and nextDouble().
+Comparison Between BufferedReader and Scanner
+Feature	BufferedReader	Scanner
+Primary Use	Reading text efficiently	Parsing primitive types
+Performance	Generally faster for large inputs	Slower due to parsing capabilities
+Input Types	Text only	Text, integers, doubles, etc.
+Line Reading	Uses readLine() method	Uses nextLine() method
+Conclusion
+Use BufferedReader when you need to read large amounts of text quickly.
  */
