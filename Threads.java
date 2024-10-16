@@ -27,7 +27,7 @@ class A extends Thread{
         for(int i =0;i<100;i++){
             System.out.println("hi");
             //sleep method throws interrupted exception alway and hence try and cath is needed
-            try{
+            try{//with sleep we are trying to print "hi" and "hello" alternatively
             Thread.sleep(10); //this thread goes to sleep and B thread will get to work and print Hello.
         }catch(InterruptedException e){
             e.printStackTrace();
