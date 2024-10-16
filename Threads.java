@@ -6,7 +6,12 @@ start() Method:
 Purpose: The start() method is used to initiate a new thread. When called, it allocates a new stack for the thread and invokes the run() method in a separate call stack.
 Execution: It allows the thread to enter the Runnable state, where it can be scheduled for execution by the thread scheduler.
 Concurrency: Multiple threads can run concurrently when start() is called on different thread instances.
- */
+ 
+run() Method
+Purpose: The run() method contains the code that defines what the thread will execute. It is essentially the entry point for the thread's execution.
+Direct Invocation: If run() is called directly (e.g., obj.run()), it does not start a new thread; instead, it runs in the current thread's context, which defeats the purpose of multithreading.
+Implementation: It can be overridden when implementing the Runnable interface or extending the Thread class.
+*/
 class A extends Thread{
     public void run()
     {
