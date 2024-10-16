@@ -11,6 +11,12 @@ run() Method
 Purpose: The run() method contains the code that defines what the thread will execute. It is essentially the entry point for the thread's execution.
 Direct Invocation: If run() is called directly (e.g., obj.run()), it does not start a new thread; instead, it runs in the current thread's context, which defeats the purpose of multithreading.
 Implementation: It can be overridden when implementing the Runnable interface or extending the Thread class.
+
+Key Differences
+Calling start() creates a new thread and invokes run() asynchronously.
+Calling run() directly executes it in the current thread without creating a new one.
+Conclusion
+Using start() is essential for concurrent execution, while run() defines the behavior of the thread.
 */
 class A extends Thread{
     public void run()
