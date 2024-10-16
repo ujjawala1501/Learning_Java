@@ -17,13 +17,22 @@ Calling start() creates a new thread and invokes run() asynchronously.
 Calling run() directly executes it in the current thread without creating a new one.
 Conclusion
 Using start() is essential for concurrent execution, while run() defines the behavior of the thread.
+
+By default the threads priority is set to 5 which we can see by using obj1.getpriority() we can set priority as well but its like only suggesting the schedular that we can make this a priority but its not must that 
+schedular will consider that.
 */
 class A extends Thread{
     public void run()
     {
         for(int i =0;i<100;i++){
             System.out.println("hi");
+            //sleep method throws interrupted exception alway and hence try and cath is needed
+            try{
+            Thread.sleep(10); //this thread goes to sleep and B thread will get to work and print Hello.
+        }catch(InterruptedException e){
+            e.printStackTrace();
         }
+    }
     }
 
 }
@@ -31,8 +40,13 @@ class B extends Thread {
     public void run(){
         for(int i=0;i<100;i++){
             System.out.println("Hello");
+            try{
+                Thread.sleep(10);
+        }catch(InterruptedException e){
+            e.printStackTrace();
         }
     }
+}
 }
 public class Threads {
     public static void main(String[] args){
