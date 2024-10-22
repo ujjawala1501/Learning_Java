@@ -38,5 +38,5 @@ PriorityQueue: Orders elements based on their natural ordering or a comparator.
 Important Classes
 Collections: A utility class that provides static methods for common operations on collections (e.g., sorting, searching).
 Arrays: Contains static methods for manipulating arrays (e.g., sorting).
-
+ 
 */
