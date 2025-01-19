@@ -3,7 +3,7 @@
     public int add(int n1,int n2){
         int result = n1 + n2 ;
         System.out.println("Currently inside Calculator class and add method");
-        return result;
+        return r;
     }
 }
 
@@ -19,6 +19,8 @@ public class Method
         int n2 = 3;
         System.out.println("Inside main method of Method class and in the next line calling add method");
         int result = cal.add(n1,n2);
+        int result2 = cal1.add(4,6);
+        System.out.println(result2);
 
     }
 }
